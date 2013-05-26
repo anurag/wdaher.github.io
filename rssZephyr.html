@@ -1,0 +1,72 @@
+<HTML>
+<HEAD>
+<TITLE>SIPB RSS-to-Zephyr Service</TITLE>
+</HEAD>
+
+<BODY>
+<H1><A HREF="http://www.mit.edu/sipb">SIPB</A> RSS-to-Zephyr Service</H1>
+<P>
+You love Zephyr, and you also like staying on top of things using RSS
+feeds. Why not combine the two, for the best of both worlds? Enter
+the <B>SIPB RSS-Zephyr Service</B>, a service that sends Zephyrs to a
+given Zephyr class and instance when new items become available in an
+RSS feed.
+</P>
+
+<H2>News</H2>
+<P>
+<B>2008-06-21</B> <BR> Now uses write-ahead-logging, a SQL backend,
+support for eTags, handles errors better, and sets a reasonable
+user agent. Maybe there will be a web interface someday.
+</P>
+
+<P>
+<B>2005-04-22</B> <BR> I hope to write a much better version of
+something like this over the summer. Until then, the current code gets
+the job done reasonably well.
+</P>
+
+<H2>How To Use</H2> 
+<P>
+To add an RSS feed, edit
+<code>/afs/athena.mit.edu/user/w/d/wdaher/Public/rssZephyr/feedsToPoll/feeds</code>
+and add your RSS feed and information there.  In the file, you need to
+specify the URL of the RSS feed, how frequently to poll the URL for
+changes, and where (i.e. Zephyr class and instance) you want the feed
+sent when updates occur.
+</P>
+<P>
+Here is a sample entry that you might add to the file, if you wanted
+to poll Slashdot every hour, and send a Zephyr to class
+<CODE>wdaher-test</CODE>, instance <CODE>rss</CODE> every time
+something new happens: <BR>
+
+<CODE>http://www.slashdot.org/index.rss,wdaher-test,rss, 60
+</CODE>
+</P>
+
+<H2>FAQ</H2>
+<P>
+<B>Q:</B> Your zephyr bot is sending hundreds of zephyrs every five
+minutes to a zephyr class, and I think it's probably broken. How can I
+disable it until it is fixed?
+<BR>
+<B>A:</B> Yeah, sometimes things go wrong like that. If this ends up
+being the case, open up the feeds file
+(<CODE>/afs/athena.mit.edu/user/w/d/wdaher/Public/rssZephyr/feedsToPoll/feeds</CODE>). In
+the file, there should be a line that says <CODE># STOP</CODE>. Remove
+the hash mark (<CODE>#</CODE>) from before the word <CODE>STOP</CODE>,
+and the Zephyr bot will stop sending zephyrs. If you do this, though,
+please email me so that I can fix the problem; stopping the Zephyr bot
+stops it for everyone.
+</P>
+<P>
+<B>Q:</B> How can I contact you?
+<BR>
+<B>A:</B> Email to <CODE>sipb-zephyrss@mit.edu</CODE> or a Zephyr to
+<CODE>wdaher</CODE> are probably the best ways to reach me.
+</P>
+<HR>
+<I>Page last modified June 21, 2008 by wdaher</I>
+</BODY>
+</HTML>

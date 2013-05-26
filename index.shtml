@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Waseem Daher</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <script src="js/bootstrap.min.js"></script>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span4 offset4">
+      <p class="lead">
+        <strong>Waseem Daher</strong><br/>
+        wdaher@gmail.com<br/>
+      </p>
+    </div>
+  </div>
+  <div class="row-fluid">
+    <div class="span4 offset4">
+      <p>I'm currently living and working in
+	Cambridge, Mass.</p>
+      <p>
+	I graduated from M.I.T. with a B.S. in 2007, and an M.Eng. in
+	2008, both in Electrical Engineering and Computer
+	Science.</p>
+      <p>Upon graduating, I
+	cofounded <a href="http://www.ksplice.com/">Ksplice</a>, with
+	three other MIT alums. Ksplice allows you to install kernel
+	updates without needing to reboot the system. In July 2011, it
+	was acquired by Oracle.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Apache log -->
+<img src="http://scripts.mit.edu/~wdaher/fake_log.pl?uri=
+<!--#echo var="DOCUMENT_URI" -->&amp;ref=
+<!--#echo var="HTTP_REFERER" -->&amp;met=
+<!--#echo var="REQUEST_METHOD" -->&amp;pro=
+<!--#echo var="SERVER_PROTOCOL" -->" 
+width="1" height="1" alt=""/>
+</BODY>
+</HTML>
