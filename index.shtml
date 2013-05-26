@@ -12,14 +12,14 @@
   <div class="row-fluid">
     <div class="span12 book-cover">
       <h1 class="small">On</h1>
-      <h1>Waseem Daher:</h1>
+      <h1><span class="kern">W</span>aseem Daher:</h1>
       <h1 class="small">Or, a guy that does stuff.</h1>
     </div>
   </div>
   <div class="row-fluid">
     <div class="span12 book-cover">
       <div class="divider">~~~~~</div>
-      <h3>By Waseem Daher</h3>
+      <h3>By <span class="kern">W</span>aseem Daher</h3>
       <h5>
 	<a href="https://twitter.com/wdaher">Twitter</a>,
 	<a href="https://linkedin.com/in/wdaher">LinkedIn</a>
